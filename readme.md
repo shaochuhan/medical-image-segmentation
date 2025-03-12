@@ -1,5 +1,8 @@
 # MedSecure-U: 基于Unet的医学图像分割与隐私保护开源框架
-<img src="https://github.com/user-attachments/assets/1075c180-644d-4b9c-9781-c355da7cd0f5" alt="Project Banner" width="400px" height="auto">
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1075c180-644d-4b9c-9781-c355da7cd0f5" alt="Project Banner" width="400px">
+</p>
 
 
 
