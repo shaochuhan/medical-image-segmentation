@@ -1,6 +1,7 @@
 # MedSecure-U: 基于Unet的医学图像分割与隐私保护开源框架
+![05c4f94bb1aa1124e27b011896e2fcf](https://github.com/user-attachments/assets/1075c180-644d-4b9c-9781-c355da7cd0f5)
 
-![Project Banner](https://via.placeholder.com/800x200/007BFF/FFFFFF?text=MedSecure-U+Medical+Imaging+%26+Privacy+Protection)
+
 
 ## 🚀 项目概述
 **MedSecure-U** 是一款面向医学图像处理与隐私保护的开源框架，创新性融合深度学习分割算法与密码学技术，为医疗AI应用提供安全高效的解决方案。
