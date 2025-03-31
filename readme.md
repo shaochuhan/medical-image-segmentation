@@ -47,10 +47,10 @@ MedSecure-U provides a user-friendly graphical interface that enables seamless i
 
 
 
-<table>
+<table align="center">
   <tr>
-    <td align="center"><img src="https://github.com/user-attachments/assets/9da98c85-3581-466b-baf7-299c3a416409" alt="Image 1" width="300px"></td>
-    <td align="center"><img src="https://github.com/user-attachments/assets/e2aba8bc-2819-4fb2-8982-eef534422a1f" alt="Image 2" width="300px"></td>
+    <td align="center"><img src="https://github.com/user-attachments/assets/e2aba8bc-2819-4fb2-8982-eef534422a1f" alt="Image 1" width="500px"></td>
+    <td align="center"><img src="https://github.com/user-attachments/assets/9da98c85-3581-466b-baf7-299c3a416409" alt="Image 2" width="500px"></td>
   </tr>
 </table>
 
