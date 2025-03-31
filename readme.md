@@ -1,45 +1,61 @@
-# MedSecure-U: 基于Unet的医学图像分割与隐私保护开源框架
+# MedSecure-U: Unet-Based Medical Image Segmentation and Privacy-Preserving Open-Source Framework
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1075c180-644d-4b9c-9781-c355da7cd0f5" alt="Project Banner" width="400px">
 </p>
 
+## 🚀 Project Overview
+**MedSecure-U** is an open-source framework for medical image processing and privacy protection. It innovatively combines deep learning segmentation algorithms with cryptographic techniques, providing secure and efficient solutions for healthcare AI applications.
 
-## 🚀 项目概述
-**MedSecure-U** 是一款面向医学图像处理与隐私保护的开源框架，创新性融合深度学习分割算法与密码学技术，为医疗AI应用提供安全高效的解决方案。
+## ✨ Core Features
 
-## ✨ 核心功能
+### 🏥 High-Precision Medical Image Segmentation
+- **Enhanced Unet Architecture**: Integrates channel attention mechanisms to boost segmentation accuracy of tumor/lesion areas by over 3.7%.
+- **Full-Format Support**: Compatible with medical imaging formats such as DICOM, PNG, JPG, etc.
+- **Intelligent Preprocessing**: Automatically performs size normalization, background removal, histogram equalization, and more.
 
-### 🏥 高精度医学图像分割
-- **改进型Unet架构**：集成通道注意力机制，对肿瘤/病变区域的分割准确率提升20%+
-- **全格式支持**：兼容DICOM、PNG、JPG等医学影像格式
-- **智能预处理**：自动完成尺寸标准化、背景去除、灰度均衡等操作
+### 🔒 Tiered Privacy Protection
+- **LWE Homomorphic Encryption**: Applies lattice-based encryption to segmentation feature vectors, defending against model inversion attacks.
+- **SHA256 Index Tree**: Constructs a verifiable encrypted database, improving retrieval efficiency by 35%.
+- **Zero-Trust Architecture**: Supports distributed deployment to meet hospital-grade data security requirements.
 
-### 🔒 分级隐私保护
-- **LWE同态加密**：对分割特征向量实施格基加密，防御模型逆向攻击
-- **SHA256索引树**：构建可验证加密数据库，检索效率提升35%
-- **零信任架构**：支持分布式部署，满足医院级数据安全要求
+### 🛠 Developer-Friendly Design
+- **Dual-Mode Interface**: Offers both a visual GUI (based on PyQt) and a RESTful API.
+- **Modular Encapsulation**: Facilitates quick integration with PACS/HIS and other medical information systems.
+- **Cross-Platform Support**: Compatible with Linux/Windows systems with CUDA acceleration optimizations.
 
-### 🛠 开发者友好设计
-- **双模接口**：提供可视化GUI（基于PyQt）和RESTful API
-- **模块化封装**：支持快速集成PACS/HIS等医疗信息系统
-- **跨平台支持**：适配Linux/Windows系统，CUDA加速优化
+## 📊 Performance Metrics
 
-## 📊 性能指标
-| 评估维度       | 测试结果                          | 对比基线       |
-|----------------|-----------------------------------|----------------|
-| 分割精度(DSC)  | 92.4% (前列腺MRI)                 | Unet: 76.8%    |
-| 加密效率       | 单图加密耗时≤0.8s (RTX3090)       | Paillier: 2.3s |
-| 抗攻击能力     | 成功防御10^6次FGSM模拟攻击        | -              |
+| Evaluation Metric          | Test Result                          | Baseline Comparison |
+|----------------------------|--------------------------------------|---------------------|
+| Segmentation Accuracy (DSC)| 92.4% (Prostate MRI)                 | Unet: 90.8%         |
+| Encryption Efficiency      | ≤0.8s per image (RTX3090)            | Paillier: 2.3s      |
+| Attack Resilience          | Successfully defended against 10^6 FGSM simulated attacks | -                   |
 
-## 🏆 技术突破
-- **算法创新**：首个融合注意力机制与LWE加密的医学AI框架
-- **工程优化**：实现加密/分割流水线并行，吞吐量达58 FPS
-- **临床验证**：已通过三甲医院POC测试，误诊率降低19.7%
+## 🏆 Technical Breakthroughs
+- **Algorithm Innovation**: The first medical AI framework to integrate attention mechanisms with LWE encryption.
+- **Engineering Optimization**: Achieves parallel encryption/segmentation pipelines with a throughput of 58 FPS.
+- **Clinical Validation**: Successfully passed POC testing in a top-tier hospital, reducing misdiagnosis rates by 19.7%.
 
-## 📚 开发文档
+## 🖥 UI Module: Demonstration Interface
+
+MedSecure-U provides a user-friendly graphical interface that enables seamless interaction with the underlying segmentation and encryption pipelines. The UI offers the following functionalities:
+
+- **Interactive Visualization**: Display segmentation results alongside original medical images.
+- **Real-Time Processing**: Monitor progress and receive immediate feedback during image processing.
+- **Encryption Status**: Visual indicators show the encryption process and validation of data integrity.
+
+
+
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/user-attachments/assets/9da98c85-3581-466b-baf7-299c3a416409" alt="Image 1" width="300px"></td>
+    <td align="center"><img src="https://github.com/user-attachments/assets/e2aba8bc-2819-4fb2-8982-eef534422a1f" alt="Image 2" width="300px"></td>
+  </tr>
+</table>
+
+## 📚 Developer Documentation
+
 ```bash
-# 快速安装
-git clone https://github.com/medsecure-u/core.git
-conda env create -f environment.yml
-python app.py --gui
+# Quick Installation
+git clone https://github.com/shaochuhan/medical-image-segmentation.git
